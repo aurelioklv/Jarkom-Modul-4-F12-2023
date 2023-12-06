@@ -79,7 +79,14 @@
 </p>
 
 ## CIDR
-###Pembagian IP gns3
+### Penggabungan
+![image](https://github.com/aurelioklv/Jarkom-Modul-4-F12-2023/assets/114126015/3d612c4f-049c-4746-85ef-c7a6710a80d1)
+![image](https://github.com/aurelioklv/Jarkom-Modul-4-F12-2023/assets/114126015/3141c4f7-067e-4af6-a32f-cb983358b9d1)
+### Tree 
+![image](https://github.com/aurelioklv/Jarkom-Modul-4-F12-2023/assets/114126015/34ec724b-29a7-4deb-9632-d50042a919e3)
+### Pembagian IP gns3
+![image](https://github.com/aurelioklv/Jarkom-Modul-4-F12-2023/assets/114126015/b31d7984-be2c-4b33-ba79-2ea1aa9944b7)
+
 Aura 
 ```
 
@@ -455,8 +462,8 @@ address 192.224.128.3
 netmask 255.255.255.0
 gateway 192.224.128.1
 ```
-###Routing
-tmp
+### Routing
+
 Aura
 ```
 #denken
