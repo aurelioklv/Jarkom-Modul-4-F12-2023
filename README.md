@@ -210,7 +210,7 @@ Himmel
 auto eth0
 iface eth0 inet static
 	address 192.226.20.10
-	netmask 255.255.255.0
+	netmask 255.255.255.252
 	gateway 192.226.20.9
 
 
@@ -454,4 +454,84 @@ iface eth0 inet static
 address 192.224.128.3
 netmask 255.255.255.0
 gateway 192.224.128.1
+```
+###Routing
+tmp
+Aura
+```
+#denken
+route add -net 192.225.0.0 netmask 255.255.255.0 gw 192.225.1.2
+#eisen
+route add -net 192.224.64.0 netmask 255.255.255.248 gw 192.224.32.2
+route add -net 192.224.16.0 netmask 255.255.255.252 gw 192.224.32.2
+route add -net 192.224.8.0 netmask 255.255.255.252 gw 192.224.32.2
+route add -net 192.224.4.0 netmask 255.255.255.0 gw 192.224.32.2
+route add -net 192.224.0.0 netmask 255.255.252.0 gw 192.224.32.2
+route add -net 192.224.160.0 netmask 255.255.255.252 gw 192.224.32.2
+route add -net 192.224.144.0 netmask 255.255.254.0 gw 192.224.32.2
+route add -net  192.224.136.0 netmask 255.255.255.252 gw 192.224.32.2
+route add -net 192.224.132.0 netmask 255.255.255.192 gw 192.224.32.2
+route add -net 192.224.128.0 netmask 255.255.252.0 gw 192.224.32.2
+
+#freiren
+route add -net 192.226.64.0 netmask 255.255.255.224 gw 192.226.128.2
+route add -net 192.226.32.0 netmask 255.255.255.252 gw 192.226.128.2
+route add -net 192.226.8.0 netmask 255.255.255.252 gw 192.226.128.2
+route add -net 192.226.0.0 netmask 255.255.248.0 gw 192.226.128.2
+route add -net 192.226.16.0 netmask 255.255.252.0 gw 192.226.128.2
+route add -net 192.226.20.8 netmask 255.255.255.252 gw 192.226.128.2
+route add -net 192.226.20.0 netmask 255.255.255.248 gw 192.226.128.2
+```
+Freiren
+```
+route add -net 192.226.8.0 netmask 255.255.255.252 gw 192.226.32.2
+route add -net 192.226.0.0 netmask 255.255.248.0 gw 192.226.32.2
+route add -net 192.226.16.0 netmask 255.255.252.0 gw 192.226.32.2
+route add -net 192.226.20.8 netmask 255.255.255.252 gw 192.226.32.2
+route add -net 192.226.20.0 netmask 255.255.255.248 gw 192.226.32.2
+```
+Flamme
+```
+route add -net 192.226.0.0 netmask 255.255.248.0 gw 192.226.8.2
+route add -net 192.226.20.0 netmask 255.255.255.248 gw 192.226.20.10
+```
+Fern
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.226.8.1
+```
+Himmel
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.226.20.9
+```
+Denken
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.225.1.1
+```
+Eisen
+```
+#lugner
+route add -net 192.224.0.0 netmask 255.255.252.0 gw 192.224.8.2
+route add -net 192.224.4.0 netmask 255.255.255.0 gw 192.224.8.2
+#linie
+route add -net 192.224.144.0 netmask 255.255.254.0 gw 192.224.160.2
+route add -net  192.224.136.0 netmask 255.255.255.252 gw 192.224.160.2
+route add -net 192.224.132.0 netmask 255.255.255.192 gw 192.224.160.2
+route add -net 192.224.128.0 netmask 255.255.252.0 gw 192.224.160.2
+```
+Lugner
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.224.8.1
+```
+Linie
+```
+route add -net 192.224.132.0 netmask 255.255.255.192 gw 192.224.136.2
+route add -net 192.224.128.0 netmask 255.255.252.0 gw 192.224.136.2
+```
+Lawine
+```
+route add -net 192.224.128.0 netmask 255.255.252.0 gw 192.224.132.3
+```
+Heiter
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.224.132.1
 ```
