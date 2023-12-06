@@ -79,3 +79,379 @@
 </p>
 
 ## CIDR
+###Pembagian IP gns3
+Aura 
+```
+
+auto eth0
+iface eth0 inet dhcp
+
+#A9
+auto eth1
+iface eth1 inet static
+address 192.225.1.1
+netmask 255.255.255.252
+#A1
+auto eth2
+iface eth2 inet static
+address 192.226.128.1
+netmask 255.255.255.252
+
+#A11
+auto eth3
+iface eth3 inet static
+address 192.224.32.1
+netmask 255.255.255.252
+```
+Frieren
+```
+#A1
+auto eth0
+iface eth0 inet static
+address 192.226.128.2
+netmask 255.255.255.252
+gateway 192.226.128.1
+#A3
+auto eth1
+iface eth1 inet static
+address 192.226.32.1
+netmask 255.255.255.252
+
+#A2
+auto eth2
+iface eth2 inet static
+address 192.226.64.1
+netmask 255.255.255.224
+```
+LakeKorridor
+```
+#A2
+auto eth0
+iface eth0 inet static
+address 192.226.64.2
+netmask 255.255.255.224
+gateway 192.226.64.1
+```
+Flamme
+```
+
+#A3
+auto eth0
+iface eth0 inet static
+address 192.226.32.2
+netmask 255.255.255.252
+gateway 192.226.32.1
+
+#A4
+auto eth1
+iface eth1 inet static
+	address 192.226.8.1
+	netmask 255.255.255.252
+
+#A6
+auto eth2
+iface eth2 inet static
+	address 192.226.16.1
+	netmask 255.255.252.0
+
+#a7
+auto eth3
+iface eth3 inet static
+	address 192.226.20.9
+	netmask 255.255.255.252
+```
+Fern
+```
+#A4
+auto eth0
+iface eth0 inet static
+	address 192.226.8.2
+	netmask 255.255.255.0
+	gateway 192.226.8.1
+
+#A5
+auto eth1
+iface eth1 inet static
+	address 192.226.0.1
+	netmask 255.255.248.0
+```
+LaubHills
+```
+
+#A5
+auto eth0
+iface eth0 inet static
+	address 192.226.0.2
+	netmask 255.255.248.0
+	gateway 192.226.0.1
+```
+AppetitRegion
+```
+#A5
+auto eth0
+iface eth0 inet static
+	address 192.226.0.3
+	netmask 255.255.248.0
+	gateway 192.226.0.1
+```
+RohrRoad
+```
+#A6
+auto eth0
+iface eth0 inet static
+	address 192.226.16.2
+	netmask 255.255.252.0
+	gateway 192.226.16.1
+```
+Himmel
+```
+
+#A7
+auto eth0
+iface eth0 inet static
+	address 192.226.20.10
+	netmask 255.255.255.0
+	gateway 192.226.20.9
+
+
+#A8
+auto eth1
+iface eth1 inet static
+	address 192.226.20.1
+	netmask 255.255.255.248
+```
+SchwerMountains
+```
+#A8
+auto eth0
+iface eth0 inet static
+	address 192.226.20.2
+	netmask 255.255.255.248
+	gateway 192.226.20.1
+```
+Denken
+```
+
+#A9
+auto eth0
+iface eth0 inet static
+	address 192.225.1.2
+	netmask 255.255.255.252
+	gateway 192.225.1.1
+
+
+#a10
+auto eth1
+iface eth1 inet static
+	address 192.225.0.1
+	netmask 255.255.255.0
+```
+RoyalCapital
+```
+
+#a10
+auto eth0
+iface eth0 inet static
+	address 192.225.0.2
+	netmask 255.255.255.0
+gateway 192.225.0.1
+```
+WilleRegion
+```
+#a10
+auto eth0
+iface eth0 inet static
+	address 192.225.0.3
+	netmask 255.255.255.0
+gateway 192.225.0.1
+```
+Eisen
+```
+
+#A11
+auto eth0
+iface eth0 inet static
+address 192.224.32.2
+netmask 255.255.255.252
+gateway 192.224.32.1
+#A13
+auto eth1
+iface eth1 inet static
+address 192.224.16.1
+netmask 255.255.255.252
+
+#A14
+auto eth2
+iface eth2 inet static
+address 192.224.8.1
+netmask 255.255.255.252
+
+#A12
+auto eth3
+iface eth3 inet static
+address 192.224.64.1
+netmask 255.255.255.248
+
+#A17
+auto eth4
+iface eth4 inet static
+address 192.224.160.1
+netmask 255.255.255.252
+```
+Richter
+```
+#A12
+auto eth0
+iface eth0 inet static
+address 192.224.64.2
+netmask 255.255.255.248
+gateway 192.224.64.1
+
+```
+Revolte
+```
+#A12
+auto eth0
+iface eth0 inet static
+address 192.224.64.3
+netmask 255.255.255.248
+gateway 192.224.64.1
+```
+Stark
+```
+#A13
+auto eth0
+iface eth0 inet static
+address 192.224.16.2
+netmask 255.255.255.252
+gateway 192.224.16.1
+```
+Lugner
+```
+
+#A14
+auto eth0
+iface eth0 inet static
+address 192.224.8.2
+netmask 255.255.255.252
+gateway 192.224.8.1
+
+
+#A15
+auto eth1
+iface eth1 inet static
+address 192.224.0.1
+netmask 255.255.252.0
+
+#A16
+auto eth2
+iface eth2 inet static
+address 192.224.4.1
+netmask 255.255.255.0
+```
+TurkRegion
+```
+#A15
+auto eth0
+iface eth0 inet static
+address 192.224.0.2
+netmask 255.255.252.0
+gateway 192.224.0.1
+```
+GrobeForest
+```
+#A16
+auto eth0
+iface eth0 inet static
+address 192.224.4.2
+netmask 255.255.252.0
+gateway 192.224.4.1
+```
+Linie
+```
+
+#A17
+auto eth0
+iface eth0 inet static
+address 192.224.160.2
+netmask 255.255.255.252
+gateway 192.224.160.1
+#A18
+auto eth1
+iface eth1 inet static
+address 192.224.144.1
+netmask 255.255.254.0
+
+#A19
+auto eth2
+iface eth2 inet static
+address  192.224.136.1
+netmask 255.255.255.252
+```
+GranzChannel
+```
+#A18
+auto eth0
+iface eth0 inet static
+address 192.224.144.2
+netmask 255.255.254.0
+gateway 192.224.144.1
+```
+Lawine
+```
+
+#A19
+auto eth0
+iface eth0 inet static
+address  192.224.136.2
+netmask 255.255.255.252
+gateway  192.224.136.1
+
+#A20
+auto eth1
+iface eth1 inet static
+address 192.224.132.1
+netmask 255.255.255.192
+```
+BredtRegion
+```
+#A20
+auto eth0
+iface eth0 inet static
+address 192.224.132.2
+netmask 255.255.255.192
+gateway 192.224.132.1
+```
+Heiter
+```
+#A20
+auto eth0
+iface eth0 inet static
+address 192.224.132.3
+netmask 255.255.255.192
+gateway 192.224.132.1
+
+#A21
+auto eth1
+iface eth1 inet static
+address 192.224.128.1
+netmask 255.255.255.0
+```
+Sein
+```
+#A21
+auto eth0
+iface eth0 inet static
+address 192.224.128.2
+netmask 255.255.255.0
+gateway 192.224.128.1
+```
+RiegelCanyon
+```
+#A21
+auto eth0
+iface eth0 inet static
+address 192.224.128.3
+netmask 255.255.255.0
+gateway 192.224.128.1
+```
